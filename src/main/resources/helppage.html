@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opis</title>
+</head>
+<style>
+span{
+    font-family: Courier, monospace;
+    color:black;
+    background-color: lightblue;
+    margin:5px;
+    font-style:italic;
+    display:inline-block;
+    }
+    .line{
+
+    width:250px;
+    }
+</style>
+<body>
+<h1>Opis programu grafera funkcji</h1>
+<h2>Spis treści</h2>
+<ol>
+    <li><a href="#about">O programie</a></li>
+    <li><a href="#aboutlang">Opis języka wyrażeń</a>
+        <ol>
+            <li><a href="#expr">wyrażenia i typy</a></li>
+            <li><a href="#fun">funkcje</a></li>
+            <li><a href="#env">funkcje środowiska</a></li>
+        </ol>
+    </li>
+</ol>
+<h2 tag="about">O programie</h2>
+<p>
+    Program ten jest złożony z dwóch modułów - grafera i parsera.
+    <br><br>
+    Parser, odpowiada za interpretowanie języka wyrażeń i interakcji ze środowiskiem uruchomieniowym.
+    Posiada on możiwość ewaluowania skomplikowanych wyrażeń, definiowania zmiennych i definiowania funkcji (w tym rekurencyjnych).
+    <br><br>
+    Grafer, odpowiada za rysowanie funkcji w wydajny i "ładny" sposób.
+    Wykorzystuje on transformacje affiniczne i przekształcenia prostąkątne w celu symulacji "Viewportu".
+    Posiada także możliwość automatycznej regulacji kroków która zapewnia szczegółowe rysowanie bardziej skomplikowanych odcinków funkcji, a nie marnowaniu obliczeń na linie proste.
+    <br><br>
+    Oba te moduły są niejako niezależne i implementacja jednego nie polega na implementacji drugiego, co pozwala na potencjalny "recykling" kodu do innego projektu.
+</p>
+<h2 tag="aboutlang">Opis języka wyrażeń</h2>
+<p>
+    Moduł parsera interpretuje tzw. język wyrażeń mojego autorstwa, służy on za główny interfejs programu.
+</p>
+<h3 tag="expr">Wyrażenia i typy</h3>
+<p>
+    Większość zdań programowych w języku, to wyrażenia. Oprócz oczywisych przykładów tj:<br>
+    <span>42</span><br>
+    <span>4 + 20</span><br>
+    <span>3^10</span><br>
+    Wyrażenia te są jednego typu - REAL, i są reprezentowane przez typ zmiennoprzecinkowy.<br>
+    Wyrażeniami są również i porównania tj: <br>
+    <span>1 < 2</span><br>
+    <span>2 + 2 = 4</span><br>
+    <span>a = b</span><br>
+    Wyrażenia będące porównaniami są typu logicznego, ale można na nich używać operatorów <span>+,-,*</span>.
+    W ostatnim przykładzie zastosowane są zmienne, można je definiować używając operatora przypisania <span>:=</span>. Przypisania są jedyną operacją nie będącą jako tako wyrażeniem, lecz przy powodzeniu zwracają wartość logiczną <span>true</span>.
+    Nie można ich używać w środku innych wyrażeń, tylko w oddzielnej linijce, jest to głównie pozostałość po początkowej fazie języka.
+    Przykładowe definicje zmiennych: <br>
+    <span class="line">a := b*2+3</span>      - definicja zmiennej, warto wiedzieć że wyrażenie przypisywane nie jest ewaluowane dopóki nie jest ewaluowana zmienna więc możemy korzystać ze zmiennych których jeszcze nie zdefiniowaliśmy <br>
+    <span class="line">b := 3</span>          - przed tym punktem, jeżeli spróbowalibyśmy wykorzystać <span>a</span> otrzymalibyśmy błąd o niezdefiniowanej zmiennej <span>b</span>.<br>
+    <span class="line">a</span>               - teraz a = 9.<br>
+    <span class="line">b := 2</span><br>
+    <span class="line">a</span> - a teraz 7<br>
+</p>
+<h3 tag="fun">Funkcje</h3>
+<p>
+    Definiowanie funkcji odbywa sie bardzo podobnie jak definicja zmiennych:<br>
+    <span class="line">f(a,b,c) := a*b+c</span><br>
+    <span class="line">f(4,2,3) = 11 </span><br>
+    Część po lewej to tzw. "podpis" funkcji, parser używa tej części do przypisywania podanym argumentom ich nazw w zakresie funkcji.
+    Należy mieć na uwadze że podane argumenty są ewaluowane przy podaniu, a do zmiennych argumentowych są podane tylko wyniki tej ewaluacji, może sie to wydawać oczywiste lecz wprowadza to kilka niuansów.
+    <br><br>
+    Wyjątkowo przy podaniu jako argumenty zachowują sie funkcje - jeżeli jako argument podamy nazwe funkcji bez argumentów, SAMA funkcja zostanie podana jako argument!
+    Oznacza to że w języku pojawia sie możliwość działań typowych dla języków funkcyjnych:<br>
+    <span class="line">com(f,h,x) := f(h(x))</span><br>
+    <span class="line">a(x) := x+2</span><br>
+    <span class="line">b(x) := x*2</span><br>
+    <span class="line">ab(x) := com(a,b,x)</span><br>
+    <span class="line">ab(5) = 12</span> otrzymujemy złożenie funkcji - ((x*2)+2) <br>
+    Przy podawaniu argumenów możemy zapobiec natychmiastowej ewaluacji wyrażenia przez zastosowanie modyfikatora <span>&</span>.<br>
+    jest to użyteczne przy korzystaniu z funkcji środowiskowych którym bardziej przydaje sie dostęp do samego wyrażenia niż do jego wyniku. np.:
+    <span class="line">DRAW(&(x^2))</span><br>
+    Narysuje na ekranie, funkcje x^2. Tymczasem bez modyfikatora <span>&</span> narysowana by została funkcja stała.
+</p>
+<h3 tag="env">Funkcje środowiskowe</h3>
+<p>
+Funkcje środowiskowe otwierają okno z języka wyrażeń do Javy, i znacznie rozszerzają jego możliwości.
+Wszystkie funkcje środowiskowe są nazwane WIELKIMI literami
+</p>
+<dl>
+    <dt><span>DRAW(__func)</span></dt>
+    <dd>Rysuje funkcje <span>__func</span> na ekranie. Kolejne wartości sa otrzymywane przez podawanie argumentu <span>x</span> dlatego bardzo ważne jest żeby funkcja argument ten wykorzystywała</dd>
+    <dt><span>IF(__cond,__yes,__no)</span></dt>
+    <dd>Odpowiednik operatora terrnarego znanego z języków C-podobnych. aby zapobiedc wielokrotnej ewaluacji, a także prz funkcjach rekurencyjnych zalecane jest używanie modyfikatora <span>&</span>.</dd>
+</dl>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ProgramTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-05-27T15:21:43" hostname="Komp" time="0.083">
+  <properties/>
+  <testcase name="relationTest" classname="ProgramTest" time="0.05"/>
+  <testcase name="functionTest" classname="ProgramTest" time="0.002"/>
+  <testcase name="EvalTest" classname="ProgramTest" time="0.002"/>
+  <testcase name="assignTest" classname="ProgramTest" time="0.002"/>
+  <testcase name="compositionTest" classname="ProgramTest" time="0.002"/>
+  <testcase name="refTest" classname="ProgramTest" time="0.022"/>
+  <testcase name="precedenceTest" classname="ProgramTest" time="0.001"/>
+  <system-out><![CDATA[RELATION TEST
+FUNCTION ARGUMENT TEST
+EVAL TEST
+ASSIGNMENT TEST
+FUNCTION COMPOSITION TEST
+REFERENCE TEST
+PRECEDENCE TEST
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
