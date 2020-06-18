@@ -82,7 +82,7 @@ public class Parser {
 
     /**
      * sprawdza czy obecny token jest danego typu i go zwraca,
-     * @throws RuntimeException jeżeli token jest innego typu niż spodziewany
+     * @throws ProgramError jeżeli token jest innego typu niż spodziewany
      * @param token_type spodziewany typ tokenu
      * @return token o spodziewanym typie
      */
