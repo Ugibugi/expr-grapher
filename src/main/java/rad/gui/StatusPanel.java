@@ -12,6 +12,9 @@ import java.net.URI;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * Obsługuje kontrolki pokazywane pod wykresem
+ */
 public class StatusPanel extends JPanel {
     GraphPanel p;
     public StatusPanel(GraphPanel panel)
@@ -19,14 +22,15 @@ public class StatusPanel extends JPanel {
         super(new GridLayout(2,4,10,10));
         this.p = panel;
         JSlider divSlide = new JSlider(JSlider.HORIZONTAL,10, 100, 20);
-        divSlide.addChangeListener(e -> panel.segnum = divSlide.getValue());
+        divSlide.setEnabled(false);
+        divSlide.addChangeListener(e -> {panel.segnum = divSlide.getValue();panel.repaint();});
 
-        JSlider gridSlide = new JSlider(JSlider.HORIZONTAL, 5, 50, 10);
-        gridSlide.addChangeListener(e -> panel.gridDensity = gridSlide.getValue());
+        JSlider gridSlide = new JSlider(JSlider.HORIZONTAL, 5, 20, 10);
+        gridSlide.addChangeListener(e -> {panel.gridDensity = gridSlide.getValue();panel.repaint();});
 
         JSlider fidelitySlide = new JSlider(JSlider.HORIZONTAL, 1, 20, 4);
-        gridSlide.addChangeListener(e -> {
-            p.maxError = 1/fidelitySlide.getValue();
+        fidelitySlide.addChangeListener(e -> {
+            p.maxError = 1.0/fidelitySlide.getValue();
             p.maxDepth = fidelitySlide.getValue()*2;
             p.repaint();
         });
@@ -51,7 +55,7 @@ public class StatusPanel extends JPanel {
             p.functions.clear();
             p.repaint();
         });
-        JButton helpbtn = new JButton("POMOCY!");
+        JButton helpbtn = new JButton("POMOC");
         helpbtn.addActionListener(e -> {
             showHelp();
         });
@@ -71,6 +75,10 @@ public class StatusPanel extends JPanel {
         add(clrbutton);
         add(helpbtn);
     }
+
+    /**
+     * Pokazuje stronę pomocy
+     */
     public void showHelp()
     {
         try {

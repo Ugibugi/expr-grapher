@@ -117,9 +117,10 @@ public class GraphPanel extends JPanel {
         Font reset = g2d.getFont();
 
         g2d.setFont(new Font("Arial Bold",Font.ITALIC,14));
-        g2d.drawString("scale = "+Double.toString(scale),0,14);
-        g2d.drawString("vx = "+Double.toString(vx),0,2*14);
-        g2d.drawString("vy = "+Double.toString(vy),0,3*14);
+        g2d.drawString("scale = "+Double.toString(scale),5,14);
+        g2d.drawString("vx = "+Double.toString(vx),5,2*14);
+        g2d.drawString("vy = "+Double.toString(vy),5,3*14);
+        g2d.drawString("fidelity = "+Double.toString(maxDepth/2),5,4*14);
 
         g2d.setFont(reset);
 

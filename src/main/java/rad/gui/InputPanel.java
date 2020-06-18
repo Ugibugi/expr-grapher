@@ -9,6 +9,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Obsługuje wpisywanie formuł
+ */
 public class InputPanel extends JPanel {
     DefaultListModel<String> historyModel,variablesModel;
     JList<String> history,variables;
@@ -41,7 +44,7 @@ public class InputPanel extends JPanel {
                 catch (NullPointerException nullpo)
                 {
                     JOptionPane.showMessageDialog(null,
-                            "Null ptr excetion:"+ nullpo.getLocalizedMessage()+"\n Blad ten moze byc spowodowany niezdefiniowana zmienna.",
+                            "Null ptr excetion:"+ nullpo.getLocalizedMessage()+"\n Blad ten moze byc spowodowany niezdefiniowana zmienna, lub brakującym nawiasem.",
                             "Blad programu",
                             JOptionPane.ERROR_MESSAGE);
                 }

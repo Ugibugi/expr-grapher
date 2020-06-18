@@ -179,9 +179,10 @@ public class Parser {
         return parse_List();
     }
     private Expression parse_Expr(){
-        /*Expr -> mod Expr*/
+
         if(current.token == Token.MOD)
         {
+            /*Expr -> mod Expr*/
             Token mod = get(Token.MOD);
             Expression ret = parse_Expr();
             switch (mod.seq)

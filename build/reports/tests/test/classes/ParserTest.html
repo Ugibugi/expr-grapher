@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class ProgramTest</title>
+<title>Test results - Class ParserTest</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class ProgramTest</h1>
+<h1>Class ParserTest</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; ProgramTest</div>
+<a href="../packages/default-package.html">default-package</a> &gt; ParserTest</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">7</div>
+<div class="counter">3</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.052s</div>
+<div class="counter">0.012s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,38 +78,18 @@
 </tr>
 </thead>
 <tr>
-<td class="success">EvalTest</td>
-<td class="success">0.003s</td>
+<td class="success">basicTest</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">assignTest</td>
-<td class="success">0.002s</td>
+<td class="success">evalTest</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">compositionTest</td>
-<td class="success">0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">functionTest</td>
-<td class="success">0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">precedenceTest</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">refTest</td>
-<td class="success">0.030s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">relationTest</td>
-<td class="success">0.011s</td>
+<td class="success">precendenceTest</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -117,13 +97,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>RELATION TEST
-FUNCTION ARGUMENT TEST
-EVAL TEST
-ASSIGNMENT TEST
-FUNCTION COMPOSITION TEST
-REFERENCE TEST
-PRECEDENCE TEST
+<pre>(VAR:a^(2.0+(VAR:b^2.0)))
+((3.0*(3.0+(3.0*3.0)))+3.0)
 </pre>
 </span>
 </div>

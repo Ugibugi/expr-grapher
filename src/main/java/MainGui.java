@@ -16,29 +16,30 @@ public class MainGui {
             "PI := 355/113",
             "__EPSILON := 1/10000",
             "deriv(__dfunc,x) := (__dfunc(x+__EPSILON)-__dfunc(x))/__EPSILON",
-            "fib(n) := IF(&(n<3),1,&(fib(n-1)+fib(n-2)))",
+            "fib(__n) := IF(&(__n<3),1,&(fib(__n-1)+fib(__n-2)))",
             "min(__a,__b) := IF(&(__a<__b),&(__a),&(__b))"
             };
     public static void main(String[] args)
     {
         JFrame frame = new JFrame("Grafer funkcji");
         GraphPanel plane = new GraphPanel();
-       // plane.functions.add(x -> (x-2)*(x+2)*x/3);
 
         program = new Program();
         program.defFunc("DRAW(__func)",new Expression(){
             @Override
             public Value eval(EvalScope scope)
             {
-                //????
+
                plane.functions.add((Double f)->{
                     EvalScope fscope = new EvalScope(scope);
+                    //nazwa x oraz nazwa domyślna
                     fscope.vars.put("x",new Expression(new Value(f)));
+                    fscope.vars.put("_0",new Expression(new Value(f)));
                     Value val = scope.getvar("__func").eval(fscope);
                     if(val.type == Value.BOOL) val.realval = val.boolval ? 1.0f : 0.0f;
-                    plane.updateUI();
                     return val.realval;
                 });
+               plane.repaint();
                return new Value(true);
             }
         });
@@ -62,7 +63,7 @@ public class MainGui {
         frame.getContentPane().add(plane, BorderLayout.CENTER);
         frame.getContentPane().add(inpanel, BorderLayout.EAST);
         frame.getContentPane().add(new StatusPanel(plane),BorderLayout.SOUTH);
-        frame.setSize(1280,1080);
+        frame.setSize(1600,1000);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
