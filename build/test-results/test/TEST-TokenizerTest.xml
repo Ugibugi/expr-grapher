@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TokenizerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-18T09:35:35" hostname="Komp" time="0.002">
-  <properties/>
-  <testcase name="Basic" classname="TokenizerTest" time="0.002"/>
-  <system-out><![CDATA[{<IDENTIFIER x_1><OP =><OP -><IDENTIFIER b><OP +><IDENTIFIER sqrt><OPEN_BRACKET (><IDENTIFIER b><OP ^><NUMBER 2><OP -><NUMBER 4><OP *><IDENTIFIER a><OP *><IDENTIFIER c><CLOSE_BRACKET )><OP /><NUMBER 2><IDENTIFIER a>}
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
