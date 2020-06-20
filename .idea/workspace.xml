@@ -4,77 +4,7 @@
     <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d30126e-2ed2-4cd1-9065-256f3dd83614" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/MainConsole.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainConsole.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/MainGui.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainGui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/ColorIcon.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/ColorIcon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/GraphPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/GraphPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/InputPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/InputPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/StatusPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/StatusPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/Util.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/Util.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/gui/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/gui/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Error.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/EvalScope.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/EvalScope.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Expression.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Expression.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Parser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Program.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Program.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/ProgramError.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/ProgramError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Statement.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Statement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Token.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Token.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Tokenizer.TokenInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Tokenizer.TokenInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Tokenizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Tokenizer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/Value.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/Value.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/rad/parser/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/rad/parser/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rad/gui/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rad/gui/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rad/parser/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rad/parser/Value.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d30126e-2ed2-4cd1-9065-256f3dd83614" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,22 +235,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589712226811" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1592580755278">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1592651231865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592580755278" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1592580755278">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592651231865" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1592651231865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592580755278" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1592580755278">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592651231865" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1592651231865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592580755278" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1592580755278">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592651231865" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1592651231865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592580755278" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592651231865" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1592580755278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
