@@ -10,10 +10,12 @@ public class Value {
     public static int REAL = 0;
     public static int BOOL = 1;
     public static int VECTOR =2;
+    public static int STRING = 3;
     //public static int REF =3;
     public int type;
     public double realval;
     public boolean boolval;
+    public String stringval;
     //public Expression refval;
     public Value()
     {
@@ -28,6 +30,11 @@ public class Value {
     {
         type = Value.BOOL;
         boolval = b;
+    }
+    public Value(String str)
+    {
+        type = Value.STRING;
+        stringval=str;
     }
     /*public Value(Expression r)
     {
@@ -155,10 +162,10 @@ public class Value {
             if(boolval)return "true";
             else return "false";
         }
-       /* else if(type == Value.REF)
+        else if(type == Value.STRING)
         {
-            return "<REF>";
-        }*/
+            return "\""+stringval+"\"";
+        }
         else if(type == Value.ERRTYPE)
         {
             return "ERRVAL";

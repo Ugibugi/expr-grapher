@@ -14,7 +14,7 @@ public class MainGui {
             "E := 174/64",
             "e := 174/64",
             "PI := 355/113",
-            "__EPSILON := 1/10000",
+            "__EPSILON := 1/100",
             "deriv(__dfunc,x) := (__dfunc(x+__EPSILON)-__dfunc(x))/__EPSILON",
             "fib(__n) := IF(&(__n<3),1,&(fib(__n-1)+fib(__n-2)))",
             "min(__a,__b) := IF(&(__a<__b),&(__a),&(__b))"
@@ -42,7 +42,11 @@ public class MainGui {
                plane.repaint();
                return new Value(true);
             }
-        });
+            public String toString() {
+                return "<INTERNAL>";
+            }
+        }
+        );
         program.defFunc("IF(__cond,__yes,__no)",new Expression(){
             public Value eval(EvalScope scope)
             {
@@ -57,7 +61,43 @@ public class MainGui {
                     return scope.getvar("__no").eval(scope);
                 }
             }
+            public String toString() {
+                return "<INTERNAL>";
+            }
         });
+        program.defFunc("SHOW(__expr)",new Expression(){
+            public Value eval(EvalScope scope)
+            {
+                return new Value(scope.getvar("__expr").toString());
+            }
+            public String toString() {
+                return "<INTERNAL>";
+            }
+        });
+        program.defFunc("INTEGRATE(__func,__a,__b)",new Expression(){
+            public Value eval(EvalScope scope)
+            {
+                EvalScope fscope = new EvalScope(scope);
+                double begin = scope.getvar("__a").eval(scope).realval;
+                double end = scope.getvar("__b").eval(scope).realval;
+                double sign = 1.0;
+                if(begin > end){
+                    double buff = begin;
+                    begin = end;
+                    end = buff;
+                    sign=-1.0;
+                }
+                double result=0.0;
+                for(;begin<end;begin+=0.0001)
+                {
+                    fscope.vars.put("x",new Expression(new Value(begin)));
+                    fscope.vars.put("_0",new Expression(new Value(begin)));
+                    result += scope.getvar("__func").eval(fscope).realval*0.0001;
+                }
+                return new Value(sign*result);
+            }
+        });
+
         program.runStatements(stddefs);
         InputPanel inpanel = new InputPanel(program);
         frame.getContentPane().add(plane, BorderLayout.CENTER);
@@ -67,4 +107,5 @@ public class MainGui {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
 }
